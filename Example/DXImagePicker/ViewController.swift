@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import DXImagePicker
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view.
+    }
+
+    @IBAction func tapButton(_ sender: Any) {
+        showImagePicker(sourceType: .photoLibrary) { [unowned self] (image) in
+            self.imageView.image = image
+        }
     }
 
     override func didReceiveMemoryWarning() {

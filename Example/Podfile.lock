@@ -1,0 +1,29 @@
+PODS:
+  - CropViewController (2.6.0)
+  - DXImagePicker (0.0.1):
+    - CropViewController (~> 2.6.0)
+    - TZImagePickerController (~> 3.5.7)
+  - TZImagePickerController (3.5.8)
+
+DEPENDENCIES:
+  - CropViewController (~> 2.6.0)
+  - DXImagePicker (from `../`)
+  - TZImagePickerController (~> 3.5.7)
+
+SPEC REPOS:
+  trunk:
+    - CropViewController
+    - TZImagePickerController
+
+EXTERNAL SOURCES:
+  DXImagePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CropViewController: 7093b39ec3cb508531b22d35773e06cecd7378d8
+  DXImagePicker: 031a8ed00ba05b6217bff371d8aeb91de7004933
+  TZImagePickerController: 7fd9702897ef8c0b7c951e5463f4bcf398296f9e
+
+PODFILE CHECKSUM: eb7cbe668af7168ada6fc5e83134fd195283bfeb
+
+COCOAPODS: 1.10.1

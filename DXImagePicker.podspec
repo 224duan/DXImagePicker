@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DXImagePicker'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DXImagePicker.'
+  s.version          = '0.0.1'
+  s.summary          = 'Easy way to pick image'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  `Easy way to pick image`
                        DESC
 
-  s.homepage         = 'https://github.com/Eric/DXImagePicker'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/224duan/DXImagePicker'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Eric' => '15110426342@163.com' }
-  s.source           = { :git => 'https://github.com/Eric/DXImagePicker.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/224duan/DXImagePicker.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.swift_version = '5.0'
+
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'DXImagePicker/Classes/**/*'
   
@@ -37,6 +37,7 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'Photos'
+  s.dependency 'TZImagePickerController', '~> 3.5.7'
+  s.dependency 'CropViewController', '~> 2.6.0'
 end
