@@ -7,6 +7,12 @@
 
 ## Example
 
+```swift
+showImagePicker(sourceType: .photoLibrary) { [unowned self] (image) in
+    self.imageView.image = image
+}
+```
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
