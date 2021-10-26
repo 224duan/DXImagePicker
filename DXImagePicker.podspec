@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DXImagePicker'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Easy way to pick image'
 
 # This description is used to generate tags and improve search results.
@@ -38,6 +38,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Photos'
-  s.dependency 'TZImagePickerController', '~> 3.5.7'
+  s.dependency 'TZImagePickerController', '~> 3.6.6'
   s.dependency 'CropViewController', '~> 2.6.0'
 end
